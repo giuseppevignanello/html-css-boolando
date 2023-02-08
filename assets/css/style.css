@@ -5,14 +5,68 @@
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-}
-
 html:root {
     --header-color: #ff6900;
     --footer-color: #1a1a1a;
     --sustenibility-color :#008000;
     --discount-color: #ff0000;
 }
+
+body {
+    font-family: "Helvetica Now", Helvetica, Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+ul {
+    list-style: none;
+}
 /*#endregion general/ */
+
+/*#region header */
+
+/*#region utility */
+.container {
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+} 
+
+.space-between {
+    justify-content: space-between;
+}
+/* #endregion utility */
+#app-header {
+    background-color: var(--header-color);
+    position: fixed;
+    width: 100%;
+}
+#app-header img{
+    height: 1.5rem;
+    align-self: center;
+}
+
+#app-header nav{
+    line-height: 2rem;
+}
+
+.gender-selector, .nav-buttons {
+    color: white;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 12px;
+    
+}
+
+.gender-selector,.logo,.nav-buttons {
+    width: calc(100% / 12 * 2);
+    margin: 0.5rem 0;
+} 
+/*#endregion header */
