@@ -55,6 +55,7 @@ ul {
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 #app-header img{
     height: 1.5rem;
@@ -80,9 +81,85 @@ ul {
 /*#endregion header */
 
 /*#region main */
-    .row {
-        margin-top: 2rem;
-        gap: 1rem;
+.row {
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.card{
+     position: relative;
+ }
+
+ .discounted-price, .deleted-price{
+    font-size: 10px;
+ }
+ .card h3 {
+    font-weight:bold;
+    font-size: 10px
+ }
+
+ .card .discounted-price {
+    color: var(--discount-color);
+ }
+
+
+.card:hover { 
+    cursor: pointer;
+}
+
+ .card .back-img {
+    position: absolute;
+    top: 0;
+    left:0;
+    display: none;
     }
 
+.card .heart {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    z-index: 1;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.heart:hover{
+    color: red;
+}
+
+.card .discounted-price-percentage {
+    background-color: var(--discount-color);
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+   
+}
+
+.card .sustenibility {
+    background-color: var(--sustenibility-color);
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+    
+}
+
+
+.card .label {
+
+    padding: 5px;
+    color: white;
+    font-size:10px;
+}
+
+.card .back-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.card:hover .back-img {
+    display: block;
+}
 /*#endregion main */
