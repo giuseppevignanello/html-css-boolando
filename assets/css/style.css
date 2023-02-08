@@ -10,6 +10,7 @@ html:root {
     --footer-color: #1a1a1a;
     --sustenibility-color :#008000;
     --discount-color: #ff0000;
+    --header-text-color: #e8dcd4;
 }
 
 body {
@@ -26,7 +27,7 @@ ul {
 }
 /*#endregion general/ */
 
-/*#region header */
+
 
 /*#region utility */
 .container {
@@ -42,10 +43,17 @@ ul {
 .space-between {
     justify-content: space-between;
 }
+
+.col-4{
+    width: calc(100% / 12 * 4);
+}
 /* #endregion utility */
+/*#region header */
+
 #app-header {
     background-color: var(--header-color);
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
 }
 #app-header img{
@@ -58,7 +66,7 @@ ul {
 }
 
 .gender-selector, .nav-buttons {
-    color: white;
+    color: var(--header-text-color);
     gap: 0.5rem;
     font-weight: 600;
     font-size: 12px;
@@ -70,3 +78,11 @@ ul {
     margin: 0.5rem 0;
 } 
 /*#endregion header */
+
+/*#region main */
+    .row {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+/*#endregion main */
