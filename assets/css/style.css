@@ -1,0 +1,18 @@
+/*#region general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html:root {
+    --header-color: #ff6900;
+    --footer-color: #1a1a1a;
+    --sustenibility-color :#008000;
+    --discount-color: #ff0000;
+}
+/*#endregion general/ */
