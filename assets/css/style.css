@@ -124,18 +124,16 @@ ul {
     color: red;
 }
 
-.card .discounted-price-percentage {
-    background-color: var(--discount-color);
+.card .first-label {
     position: absolute;
     left: 0;
     bottom: 20%;
    
 }
 
-.card .sustenibility {
-    background-color: var(--sustenibility-color);
+.card .second-label {
     position: absolute;
-    left: 20%;
+    left: 15%;
     bottom: 20%;
     
 }
@@ -148,7 +146,13 @@ ul {
     font-size:10px;
 }
 
+.card .red-label {
+    background-color: var(--discount-color);
+}
 
+.card .green-label {
+    background-color: var(--sustenibility-color);
+}
 .card .back-img{
     position: absolute;
     top: 0;
