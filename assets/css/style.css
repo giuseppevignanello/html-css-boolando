@@ -57,8 +57,8 @@ ul {
     width: 100%;
     z-index: 2;
 }
-#app-header img{
-    height: 1.5rem;
+#app-header .logo{
+    height: 2rem;
     align-self: center;
 }
 
@@ -78,6 +78,7 @@ ul {
     width: calc(100% / 12 * 2);
     margin: 0.5rem 0;
 } 
+
 /*#endregion header */
 
 /*#region main */
@@ -108,12 +109,6 @@ ul {
     cursor: pointer;
 }
 
- .card .back-img {
-    position: absolute;
-    top: 0;
-    left:0;
-    display: none;
-    }
 
 .card .heart {
     background-color: white;
@@ -153,6 +148,7 @@ ul {
     font-size:10px;
 }
 
+
 .card .back-img{
     position: absolute;
     top: 0;
@@ -163,6 +159,7 @@ ul {
 .card:hover .back-img {
     display: block;
 }
+
 /*#endregion main */
 
 /*#regionfooter */
